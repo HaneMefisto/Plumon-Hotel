@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plumon Hotel</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#inicio">
+                <img src="assets/img/logo hotel.png" alt="Logo de Plumon Hotel" width="50" height="50">
+                <h1>Plumon Hotel</h1>
+            </a>
+            <ul>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#instalaciones">Instalaciones</a></li>                
+                <li><a href="#actividades">Que hacer</a></li>
+                <li><a href="#reservas" class="nav-button">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" id="inicio">
+            <div class="hero-content">
+                <h2>¡Bienvenidos a Plumon Hotel!</h2>
+                <p>Comodidad y elegancia con hospitalidad que convierte tu estadía en una experiencia única para soñar y disfrutar.</p>
+            </div>
+            <div class="hero-video">
+                <video autoplay muted loop playsinline>
+                    <source src="assets/video/presentacion.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+            </div>
+        </section>
+
+        <section class="about-section" id="nosotros">
+            <div class="about-content">
+                <h3>Nuestra historia</h3>
+                <p>Plumon Hotel es un santuario de paz y tranquilidad. Ofrecemos una experiencia única para quienes buscan desconectar y reconectar con la naturaleza. Con un diseño arquitectónico que se integra a la perfección con el entorno, cada rincón de nuestro hotel está pensado para tu máximo confort y bienestar.</p>
+                <p>Desde nuestra apertura en 2020, nos hemos dedicado a crear momentos inolvidables para nuestros huéspedes. Nuestro compromiso es brindarte un servicio excepcional y un ambiente que te haga sentir como en casa.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/img/Fachada.png" alt="Foto del hotel" />
+            </div>
+        </section>
+
+         <section class="gallery-section" id="instalaciones">
+            <h3>Nuestras instalaciones</h3>
+            <p>Explora un poco de lo que tenemos para ti.</p>
+            <div class="gallery-grid">
+                <a href="#">
+                    <img src="assets/img/piscina del hotel.png" title="Área de piscina" alt="Piscina del hotel" />
+                </a>
+                <a href="#">
+                    <img src="assets/img/habitacion.jpg" title="Habitaciones" alt="Habitación del hotel" />
+                </a>
+                <a href="#">
+                    <img src="assets/img/cafeteria.jpg" title="Restaurante" alt="Restaurante del hotel" />
+                </a>
+                <a href="#">
+                    <img src="assets/img/spa.jpg" title="Spa" alt="Spa del hotel" />
+                </a>
+            </div>
+        </section>
+
+        <section class="activities-section" id="actividades">
+            <h2>Actividades para disfrutar</h2>
+            <p>Descubre las emocionantes actividades que te esperan en y alrededor de nuestro hotel. ¡La diversión no tiene límites!</p>
+
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <img src="assets/img/caminata.jpg" alt="Caminata en la naturaleza">
+                    <h3>Caminatas y Senderismo</h3>
+                    <p>Explora los senderos que rodean el hotel y sumérgete en la belleza natural. Ofrecemos guías para diferentes niveles.</p>
+                </div>
+
+                <div class="activity-card">
+                    <img src="assets/img/yoga.jpg" alt="Clase de yoga al aire libre">
+                    <h3>Clases de Yoga</h3>
+                    <p>Relájate y encuentra tu paz interior con nuestras clases de yoga al aire libre, con vistas panorámicas a las montañas.</p>
+                </div>
+
+                <div class="activity-card">
+                    <img src="assets/img/equitacion.jpg" alt="Paseo a caballo">
+                    <h3>Paseos a Caballo</h3>
+                    <p>Vive una experiencia única explorando los paisajes a caballo. Contamos con caballos tranquilos, aptos para principiantes.</p>
+                </div>
+
+                <div class="activity-card">
+                    <img src="assets/img/degustacion.jpg" alt="Degustación de vinos">
+                    <h3>Degustación de Vinos</h3>
+                    <p>Descubre los sabores de la región con nuestra exclusiva degustación de vinos locales, un deleite para el paladar.</p>
+                </div>
+
+                <div class="activity-card">
+                    <img src="assets/img/masajes.jpg" alt="Masajes de relajación">
+                    <h3>Masajes Terapéuticos</h3>
+                    <p>Descansa y recupera energías con un masaje profesional. Elige entre masajes de relajación, descontracturantes y más.</p>
+                </div>
+
+                <div class="activity-card">
+                    <img src="assets/img/recorrido.jpg" alt="Recorrido histórico por el centro de Santiago">
+                    <h3>Recorrido Histórico por Santiago</h3>
+                    <p>Acompaña a nuestros guías locales en un viaje a través del tiempo, explorando los barrios históricos, plazas y mercados emblemáticos de la ciudad. Una forma perfecta de conocer la cultura local.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion-formulario" id="reservas">
+            <h2>Reservas - Plumon Hotel</h2>
+            <p>Por favor, completa los siguientes campos para solicitar tu reserva. Nos pondremos en contacto contigo lo antes posible para confirmar los detalles.</p>
+
+        <form action="#" method="POST" id="formularioReserva">
+        <div class="campo-form">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre">
+            <span class="error-message" id="error-nombre"></span>
+        </div>
+
+        <div class="campo-form">
+            <label for="email">Correo Electrónico</label>
+            <input type="text" id="email" name="email">
+            <span class="error-message" id="error-email"></span>
+        </div>
+
+        <div class="campo-form">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono">
+            <span class="error-message" id="error-telefono"></span>
+        </div>
+
+        <div class="campo-form">
+            <label for="llegada">Fecha de Llegada</label>
+            <input type="date" id="llegada" name="llegada">
+            <span class="error-message" id="error-llegada"></span>
+        </div>
+
+        <div class="campo-form">
+            <label for="salida">Fecha de Salida</label>
+            <input type="date" id="salida" name="salida">
+            <span class="error-message" id="error-salida"></span>
+        </div>
+
+        <div class="campo-form">
+            <label for="habitacion">Tipo de Habitación</label>
+            <select id="habitacion" name="habitacion">
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="suite">Suite</option>
+            </select>
+        </div>
+
+        <div class="campo-form">
+            <label for="mensaje">Comentarios Adicionales</label>
+            <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+        </div>
+
+        <button type="submit" class="boton-form">Enviar Solicitud</button>
+        </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Plumon Hotel. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="popup-overlay" class="popup-overlay" style="display: none;">
+        <div id="popup-content" class="popup-content">
+            <h2 id="popup-title"></h2>
+            <p id="popup-message"></p>
+            <button id="popup-close" class="popup-close">Cerrar</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
